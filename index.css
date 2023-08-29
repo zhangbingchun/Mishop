@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: 36px;
+    background-color: rgb(51, 51, 51);
+}
+
+.header .content {
+    width: 1226px;
+    height: 36px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+.header .left {
+    float: left;
+}
+
+.header .content a {
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    line-height: 36px;
+    padding: 0 10px;
+    border-right: 1px solid #666;
+}
+
+.header .left a:last-child {
+    border-right: none;
+}
+
+.header .right a:nth-child(3) {
+    border-right: none;
+}
+
+.header .right {
+    float: right;
+
+}
+
+.header .shoppingCart {
+    font-size: 12px;
+    float: right;
+    line-height: 36px;
+    background-color: rgb(66, 66, 66);
+    width: 100px;
+    height: 36px;
+    text-align: center;
+    position: relative;
+}
+
+.header .shoppingCart:hover {
+    background-color: #fff;
+    color: rgb(255, 106, 0);
+}
+
+.header .commodity {
+    position: absolute;
+    width: 240px;
+    height: 0;
+    right: 0;
+    background-color: #fff;
+    text-align: center;
+    line-height: 100px;
+    z-index: 2;
+    overflow: hidden;
+    transition: all 0.5s;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header .shoppingCart:hover>.commodity {
+    height: 100px;
+}
+
+.wrapper {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.wrapper .container {
+    width: 1226px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.container .logo {
+    width: 56px;
+    height: 56px;
+    background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi.com-assets/shop/img/logo-mi2.png);
+    background-repeat: no-repeat;
+    background-size: 56px;
+}
+
+.container .nav {
+    margin-left: 20px;
+}
+
+.container .nav a {
+    text-decoration: none;
+    color: #333;
+    line-height: 36px;
+    padding: 0 10px;
+}
+
+.container input {
+    margin-left: 70px;
+    width: 200px;
+    height: 40px;
+    padding: 0 10px;
+    outline: none;
+    border-radius: 0;
+    border: 1px solid #999;
+}
+
+.container .search {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #999;
+    border-left: none;
+}
+
+.container .goods {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: 71px;
+    right: 61px;
+    display: none;
+    border: 1px solid rgb(255, 106, 0);
+    border-top: none;
+    background-color: #fff;
+}
+
+.container .goods li {
+    height: 36px;
+    line-height: 36px;
+    list-style: none;
+}
+
+.container .goods li a {
+    font-size: 12px;
+    padding: 0 8px;
+    text-decoration: none;
+    color: #333;
+
+}
+
+input:focus~.goods {
+    display: block;
+    z-index: 1;
+}
+
+input:focus~.search {
+    border-color: rgb(255, 106, 0);
+}
+
+input:focus {
+    border-color: rgb(255, 106, 0);
+}
+
+.search:hover {
+    background-color: rgb(255, 106, 0);
+    color: white;
+}
+
+.container .goods li:hover {
+    background-color: rgb(250, 250, 250);
+}
+
+.wrapper .fodder {
+    width: 1226px;
+    height: 460px;
+    align-items: center;
+    position: relative;
+}
+
+.wrapper .fodder img {
+    width: 100%;
+}
+
+.wrapper .fodder .left a {
+    font-size: 12px;
+    padding: 0 8px;
+    border-left: 1px solid #333;
+    line-height: 60px;
+}
+
+.fodder .AllProducts {
+    position: absolute;
+    width: 200px;
+    height: 420px;
+    padding: 20px 0;
+    top: 0;
+    background-color: rgb(159, 157, 157);
+}
+
+.fodder .AllProducts li {
+    height: 42px;
+    line-height: 42px;
+    list-style: none;
+
+}
+
+.fodder .AllProducts li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 0 0 0 30px;
+}
+
+.fodder .AllProducts li span {
+    float: right;
+    padding-right: 30px;
+    color: white;
+
+
+}
+
+.fodder .AllProducts li:hover {
+    background-color: rgb(255, 106, 0);
+}
+
+
+
+#children-list-col-1 img {
+    width: 40px;
+    height: 40px;
+}
+
+#children-list-col-1 a {
+    text-decoration: none;
+}
+
+#children-col-4 {
+    width: 240px;
+}
+
+.children-list {
+    height: 458px;
+    margin: 0;
+    padding: 2px 0;
+    list-style-type: none;
+}
+
+.children-list li {
+    position: relative;
+    float: left;
+    width: 265px;
+    height: 76px;
+
+}
+
+.children-list .thumb {
+    float: left;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.children-list .text {
+    float: left;
+    width: 172px;
+    line-height: 40px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+ .children-list .link {
+    display: block;
+    padding: 18px 20px;
+    line-height: 40px;
+    color: #333;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}

@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "小米商城",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "小米商城"
+	}
+}

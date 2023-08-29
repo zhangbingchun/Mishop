@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=50 initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+
+
+
+<script lang="ts" setup>
+
+
+    import { isDark } from '~/composables/dark'
+</script>
+
+<template>
+    <div class="flex">
+        <el-button color="#626aef" :dark="isDark">Default</el-button>
+        <el-button color="#626aef" :dark="isDark" plain>Plain</el-button>
+
+        <el-button color="#626aef" :dark="isDark" disabled>Disabled</el-button>
+        <el-button color="#626aef" :dark="isDark" disabled plain>Disabled Plain</el-button>
+    </div>
+</template>
+
+</html>
